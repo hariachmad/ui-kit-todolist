@@ -34,6 +34,26 @@
     --highlight-color-focused: var(--ion-color-danger);
 }
 
+.fullWidth {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.search {
+    --border-radius: 999px;
+    --border-color: var(--app-border-color-default);
+    --highlight-color-focused: var(--app-border-color-focus);
+    --padding-start: 16px;
+    --padding-end: 16px;
+}
+
+.searchIcon {
+    margin-inline-end: 8px;
+    color: var(--app-text-secondary);
+    font-size: 1.2em;
+}
+
 .sm {
     --min-height: 36px;
     font-size: var(--app-font-size-xs);

@@ -66,7 +66,7 @@ export const Disabled: Story = {
 };
 
 export const FullWidth: Story = {
-  args: { fullWidth: true },
+  args: { fullWidth: true, variant: 'secondary'},
   parameters: { layout: 'padded' },
 };
 
