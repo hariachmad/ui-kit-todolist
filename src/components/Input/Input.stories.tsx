@@ -182,7 +182,7 @@ export const SearchSizes: Story = {
 };
 
 export const FullWidth: Story = {
-  args: { fullWidth: true, style : {width : "300px"} },
+  args: { fullWidth: true },
   decorators: Search.decorators,
 };
 
