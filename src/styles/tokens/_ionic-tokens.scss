@@ -1,0 +1,123 @@
+:root {
+    --ion-color-primary: #055a9b;
+    --ion-color-primary-rgb: 5, 90, 155;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+    --ion-color-primary-shade: #044f88;
+    --ion-color-primary-tint: #1e6aa5;
+
+    --ion-color-secondary: #85c145;
+    --ion-color-secondary-rgb: 133, 193, 69;
+    --ion-color-secondary-contrast: #ffffff;
+    --ion-color-secondary-contrast-rgb: 255, 255, 255;
+    --ion-color-secondary-shade: #75aa3d;
+    --ion-color-secondary-tint: #91c758;
+
+    --ion-text-color: #43493b;
+    --ion-text-color-rgb: 67, 73, 59;
+    --app-text-secondary: #5a6350;
+
+    --ion-background-color: #ffffff;
+    --ion-background-color-rgb: 255, 255, 255;
+    --app-color-card: #eaf2f5;
+    --app-color-input: #ebf2f5;
+
+    --app-badge-date-bg: #c9e6f0;
+    --app-badge-info-bg: #cce2f0;
+    --app-badge-warning-bg: #ece1d3;
+    --app-badge-alert-bg: #e5d6db;
+
+    --app-badge-date-text: #6a84ae;
+    --app-badge-info-text: #4c72a6;
+    --app-badge-warning-text: #a56e43;
+    --app-badge-alert-text: #a22d48;
+
+    --ion-font-family: "Google Sans Text", "Google Sans", "Plus Jakarta Sans", -apple-system, Roboto, "Helvetica Neue", sans-serif;
+    --app-font-mono: "JetBrains Mono", Menlo, Consolas, monospace;
+
+    --app-font-size-xs: 12px;
+    --app-font-size-sm: 14px;
+    --app-font-size-md: 16px;
+    --app-font-size-lg: 18px;
+    --app-font-size-xl: 20px;
+    --app-font-size-2xl: 24px;
+    --app-font-size-3xl: 30px;
+    --app-font-size-4xl: 40px;
+
+    --app-font-weight-regular: 400;
+    --app-font-weight-medium: 500;
+    --app-font-weight-semibold: 600;
+    --app-font-weight-bold: 700;
+
+    --app-line-height-tight: 1.25;
+    --app-line-height-normal: 1.5;
+    --app-line-height-relaxed: 1.75;
+
+    --app-letter-spacing-tight: -0.01em;
+    --app-letter-spacing-normal: 0em;
+    --app-letter-spacing-wide: 0.02em;
+
+    --app-space-0: 0px;
+    --app-space-1: 4px;
+    --app-space-2: 8px;
+    --app-space-3: 12px;
+    --app-space-4: 16px;
+    --app-space-5: 20px;
+    --app-space-6: 24px;
+    --app-space-8: 32px;
+    --app-space-10: 40px;
+    --app-space-12: 48px;
+    --app-space-16: 64px;
+
+    --ion-padding: 16px;
+    --ion-margin: 16px;
+
+    --app-padding-page: 16px;
+    --app-padding-card: 16px;
+    --app-padding-input: 12px;
+    --app-padding-button: 12px;
+    --app-padding-badge: 4px;
+
+    --app-radius-none: 0px;
+    --app-radius-sm: 4px;
+    --app-radius-md: 8px;
+    --app-radius-lg: 12px;
+    --app-radius-xl: 16px;
+    --app-radius-full: 9999px;
+
+    --ion-border-radius: var(--app-radius-md);
+
+    --app-border-width-none: 0px;
+    --app-border-width-thin: 1px;
+    --app-border-width-medium: 2px;
+    --app-border-width-thick: 4px;
+
+    --app-border-color-default: #d5dde0;
+    --app-border-color-focus: var(--ion-color-primary);
+
+    --app-shadow-sm: 0px 1px 2px 0px #0000001a;
+    --app-shadow-md: 0px 4px 8px -1px #0000001f;
+    --app-shadow-lg: 0px 12px 24px -4px #00000026;
+
+    --app-duration-fast: 100ms;
+    --app-duration-normal: 200ms;
+    --app-duration-slow: 350ms;
+
+    --app-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+    --app-easing-enter: cubic-bezier(0, 0, 0, 1);
+    --app-easing-exit: cubic-bezier(0.3, 0, 1, 1);
+
+    --app-z-base: 0;
+    --app-z-dropdown: 1000;
+    --app-z-sticky: 1100;
+    --app-z-overlay: 1200;
+    --app-z-modal: 1300;
+    --app-z-toast: 1400;
+    --app-z-tooltip: 1500;
+
+    --app-breakpoint-xs: 0px;
+    --app-breakpoint-sm: 576px;
+    --app-breakpoint-md: 768px;
+    --app-breakpoint-lg: 992px;
+    --app-breakpoint-xl: 1200px;
+}
