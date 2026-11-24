@@ -2,6 +2,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from 'storybook/test';
 import { Button } from './Button';
+import { add } from 'ionicons/icons';
+import { IonIcon } from '@ionic/react';
 
 const meta = {
   title: 'Components/Button',
@@ -14,7 +16,7 @@ const meta = {
   argTypes: {
     variant: {
       control: 'select',
-      options: ['primary', 'secondary', 'outline', 'ghost', 'danger'],
+      options: ['primary', 'secondary', 'outline', 'ghost', 'danger', 'add'], // + add
     },
     size: {
       control: 'inline-radio',
@@ -25,6 +27,8 @@ const meta = {
     fullWidth: { control: 'boolean' },
   },
 } satisfies Meta<typeof Button>;
+
+const addIcon = <IonIcon slot="icon-only" icon={add} />;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -47,6 +51,10 @@ export const Ghost: Story = {
 
 export const Danger: Story = {
   args: { variant: 'danger', children: 'Hapus' },
+};
+
+export const Add: Story = {
+  args: { variant: 'add', children: addIcon },
 };
 
 export const Loading: Story = {
@@ -72,12 +80,23 @@ export const Sizes: Story = {
   ),
 };
 
+// Story baru: ketiga ukuran tombol add
+export const AddSizes: Story = {
+  render: (args) => (
+    <div style={{ display: 'flex', gap: 'var(--app-space-3)', alignItems: 'center' }}>
+      <Button {...args} variant="add" size="sm" children={addIcon} />
+      <Button {...args} variant="add" size="md" children={addIcon} />
+      <Button {...args} variant="add" size="lg" children={addIcon} />
+    </div>
+  ),
+};
+
 export const AllVariants: Story = {
   render: (args) => (
     <div style={{ display: 'flex', gap: 'var(--app-space-3)', flexWrap: 'wrap' }}>
-      {(['primary', 'secondary', 'outline', 'ghost', 'danger'] as const).map((v) => (
+      {(['primary', 'secondary', 'outline', 'ghost', 'danger', 'add'] as const).map((v) => (
         <Button key={v} {...args} variant={v}>
-          {v}
+          {v === 'add' ? addIcon : v}
         </Button>
       ))}
     </div>

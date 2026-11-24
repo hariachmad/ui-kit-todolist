@@ -1,0 +1,52 @@
+.label {
+    display: block;
+    font-family: var(--ion-font-family);
+    line-height: var(--app-line-height-normal);
+    letter-spacing: var(--app-letter-spacing-normal);
+}
+
+.default {
+    color: var(--ion-text-color);
+}
+
+.muted {
+    color: var(--ion-color-medium);
+}
+
+.error {
+    color: var(--ion-color-danger);
+}
+
+// Font size
+.sm {
+    font-size: var(--app-font-size-sm);
+}
+
+.md {
+    font-size: var(--app-font-size-md);
+}
+
+.light {
+    font-weight: var(--app-font-weight-light);
+}
+
+.regular {
+    font-weight: var(--app-font-weight-regular);
+}
+
+.medium {
+    font-weight: var(--app-font-weight-medium);
+}
+
+.semibold {
+    font-weight: var(--app-font-weight-semibold);
+}
+
+.bold {
+    font-weight: var(--app-font-weight-bold);
+}
+
+.required {
+    color: var(--ion-color-danger);
+    margin-left: 4px;
+}

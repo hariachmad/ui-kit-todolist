@@ -8,7 +8,7 @@
   --padding-start: var(--app-space-4);
   --padding-end: var(--app-space-4);
   --transition: background var(--app-duration-fast) var(--app-easing-standard),
-                opacity var(--app-duration-fast) var(--app-easing-standard);
+    opacity var(--app-duration-fast) var(--app-easing-standard);
 
   text-transform: none;
   letter-spacing: var(--app-letter-spacing-normal);
@@ -17,6 +17,21 @@
 
   &::part(native):focus-visible {
     @include focus-ring;
+  }
+}
+
+.add {
+  --background: var(--button-bg, var(--ion-color-secondary));
+  --background-hover: var(--ion-color-secondary-shade);
+  --background-activated: var(--ion-color-secondary-shade);
+  --color: var(--ion-color-primary);
+  --padding-start: 0;
+  --padding-end: 0;
+
+  ion-icon {
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--ion-color-primary);
   }
 }
 
@@ -31,7 +46,7 @@
   --background: var(--button-bg, var(--ion-color-secondary));
   --background-hover: var(--ion-color-secondary-shade);
   --background-activated: var(--ion-color-secondary-shade);
-  --color: var(--ion-color-secondary-contrast);
+  --color: var(--ion-text-color);
 }
 
 .outline {

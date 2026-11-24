@@ -6,12 +6,12 @@
     --ion-color-primary-shade: #044f88;
     --ion-color-primary-tint: #1e6aa5;
 
-    --ion-color-secondary: #85c145;
+    --ion-color-secondary: #EAF2F5;
     --ion-color-secondary-rgb: 133, 193, 69;
     --ion-color-secondary-contrast: #ffffff;
     --ion-color-secondary-contrast-rgb: 255, 255, 255;
-    --ion-color-secondary-shade: #75aa3d;
-    --ion-color-secondary-tint: #91c758;
+    --ion-color-secondary-shade: #cadce2;
+    --ion-color-secondary-tint: #f0f3f5;
 
     --ion-text-color: #43493b;
     --ion-text-color-rgb: 67, 73, 59;
@@ -27,7 +27,7 @@
     --app-badge-warning-bg: #ece1d3;
     --app-badge-alert-bg: #e5d6db;
 
-    --app-badge-date-text: #6a84ae;
+    --app-badge-date-text: #3f5e91;
     --app-badge-info-text: #4c72a6;
     --app-badge-warning-text: #a56e43;
     --app-badge-alert-text: #a22d48;
@@ -120,4 +120,10 @@
     --app-breakpoint-md: 768px;
     --app-breakpoint-lg: 992px;
     --app-breakpoint-xl: 1200px;
+
+    --app-font-weight-light: 300;
+    --app-font-weight-regular: 400;
+    --app-font-weight-medium: 500;
+    --app-font-weight-semibold: 600;
+    --app-font-weight-bold: 700;
 }

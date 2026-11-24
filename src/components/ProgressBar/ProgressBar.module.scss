@@ -1,0 +1,30 @@
+@use 'abstracts' as *;
+
+.progressBar {
+  --progress-background: var(--ion-color-primary);
+  display: block;
+  width: 100%;
+  min-width: 120px;
+  height: 8px;
+
+}
+
+.progress {
+  --progress-background: var(--progress-fill, var(--ion-color-primary));
+}
+
+.complete {
+  --progress-background: var(--progress-complete, var(--ion-color-success));
+}
+
+.empty {
+  --background: var(--ion-color-primary);
+}
+
+.sm { height: 4px; }
+.md { height: 8px; }
+
+.progressBar::part(track),
+.progressBar::part(progress) {
+  border-radius: var(--app-radius-md);
+}

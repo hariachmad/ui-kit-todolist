@@ -1,0 +1,57 @@
+
+.datePicker {
+  --border-radius: var(--app-radius-md);
+  --border-width: var(--app-border-width-thin);
+  --border-color: var(--app-border-color-default);
+  --background: var(--app-color-input);
+  --highlight-color-focused: var(--app-border-color-focus);
+
+  --padding-start: var(--app-padding-input);
+  --padding-end: var(--app-padding-input);
+
+  font-family: var(--ion-font-family);
+  color: var(--ion-text-color);
+  cursor: pointer;
+}
+
+.default {
+  --border-color: var(--app-border-color-default);
+}
+
+.error {
+  --border-color: var(--ion-color-danger);
+  --highlight-color-focused: var(--ion-color-danger);
+}
+
+.sm {
+  font-size: var(--app-font-size-xs);
+  min-height: 36px;
+}
+
+.md {
+  font-size: var(--app-font-size-sm);
+  min-height: 44px;
+}
+
+.lg {
+  font-size: var(--app-font-size-md);
+  min-height: 52px;
+}
+
+.calendarIcon {
+  font-size: 18px;
+  color: var(--app-text-secondary);
+}
+
+.modal {
+  --width: 350px;
+  --height: auto;
+  --border-radius: var(--app-radius-lg);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--app-space-2);
+  padding: var(--app-space-4);
+}

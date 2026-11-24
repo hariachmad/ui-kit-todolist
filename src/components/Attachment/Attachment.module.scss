@@ -1,0 +1,73 @@
+
+.attachment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    width: 100%;
+    min-height: 44px;
+    padding: 10px 16px;
+
+    background: var(--app-color-input);
+    border: var(--app-border-width-thin) solid var(--app-border-color-default);
+    border-radius: var(--app-radius-md);
+
+    cursor: pointer;
+
+    transition:
+        background-color var(--app-duration-normal) var(--app-easing-standard),
+        border-color var(--app-duration-normal) var(--app-easing-standard);
+
+    &:hover {
+        border-color: var(--app-border-color-focus);
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--app-border-color-focus);
+        outline-offset: 2px;
+    }
+}
+
+.fileInput {
+    display: none;
+}
+
+.icon {
+    font-size: 14px;
+    color: var(--ion-text-color);
+    flex-shrink: 0;
+}
+
+.description,
+.separator,
+.browse {
+    font-family: var(--ion-font-family);
+    font-size: var(--app-font-size-xs);
+    line-height: var(--app-line-height-normal);
+    white-space: nowrap;
+}
+
+.description {
+    color: var(--ion-text-color);
+}
+
+.separator {
+    color: var(--app-text-secondary);
+}
+
+.browse {
+    color: var(--ion-color-primary);
+    font-weight: var(--app-font-weight-medium);
+}
+
+.dragging {
+    border-color: var(--ion-color-primary);
+    background: var(--ion-color-secondary);
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}

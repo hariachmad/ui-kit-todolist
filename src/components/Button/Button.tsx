@@ -6,7 +6,7 @@ import styles from './Button.module.scss';
 type IonButtonProps = ComponentProps<typeof IonButton>;
 
 export type ButtonProps = Omit<IonButtonProps, 'color' | 'size' | 'fill'> & {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger';
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger'|'add';
   size?: 'sm' | 'md' | 'lg';
   loading?: boolean;
   fullWidth?: boolean;
